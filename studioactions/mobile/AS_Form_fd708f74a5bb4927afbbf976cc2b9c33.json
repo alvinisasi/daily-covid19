@@ -1,0 +1,101 @@
+{
+    "AS_Form_fd708f74a5bb4927afbbf976cc2b9c33": {
+        "id": "AS_Form_fd708f74a5bb4927afbbf976cc2b9c33",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": null,
+            "KUID": "cc9ceb5be1014de5b3ae54782b677118"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "LOADING_INDICATOR__c5214ed8891049a38bdfb441911b66cc",
+            "selectedOption": "show",
+            "disabled": null,
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_ASYNC_SERVICE__f5e38a7f0fb6487d90438267b06d8b45",
+            "type": "INVOKE_ASYNC_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "Contacts",
+                "type": "integration",
+                "operationname": "getContacts",
+                "serviceid": "ddca2a1c-90b9-46ad-ae65-8fb6e2baebe4",
+                "operationid": "9749512"
+            },
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR__c03f8e3924d34985ac388a6736343e70",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_ASYNC_SERVICE__f5e38a7f0fb6487d90438267b06d8b45",
+            "disabled": null,
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_IF_CONDITION_f1d262735bad4ff492cd3bea45de033e",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValue": "getContacts.opstatus",
+                "rightValue": "0",
+                "leftValueType": "value",
+                "rightValueType": "value",
+                "operator": "==="
+            }],
+            "parentId": "INVOKE_ASYNC_SERVICE__f5e38a7f0fb6487d90438267b06d8b45",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ELSE_CONDITION_b91145db4a5344619021b6aa9484925d",
+            "type": "ELSE_CONDITION",
+            "conditions": [],
+            "parentId": "INVOKE_ASYNC_SERVICE__f5e38a7f0fb6487d90438267b06d8b45",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT__a766cc4aeec748b9ad355521d8aca0b7",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": null,
+            "yesLabel": null,
+            "noLabel": null,
+            "alertIcon": null,
+            "alertMessage": "Data fetch failed! Please try again later.",
+            "messageType": "constant",
+            "alertHandler": null,
+            "parentId": "_ELSE_CONDITION_b91145db4a5344619021b6aa9484925d",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "ADD_MAPPING__b483204eceb74936a6d7e597537132a1",
+            "type": "ADD_MAPPING",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "_IF_CONDITION_f1d262735bad4ff492cd3bea45de033e",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

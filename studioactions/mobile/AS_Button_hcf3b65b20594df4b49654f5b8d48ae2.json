@@ -1,0 +1,31 @@
+{
+    "AS_Button_hcf3b65b20594df4b49654f5b8d48ae2": {
+        "id": "AS_Button_hcf3b65b20594df4b49654f5b8d48ae2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSplash",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ca28276986ab4a12a85932c0835627b6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___jaf8afe290614e748c12d61ad7e02746",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCovid",
+            "formKUID": "f4eba3a32499485db57ba8b6bce9141e",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"ButtonNext\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

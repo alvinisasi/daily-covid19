@@ -1,0 +1,44 @@
+{
+    "AS_TextField_b696dade5092425d8bcf8b1889fe5ded": {
+        "id": "AS_TextField_b696dade5092425d8bcf8b1889fe5ded",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "uwdc499b380ab74a8593eed0a25bafb746",
+            "type": "userwidgets",
+            "KUID": "dc499b380ab74a8593eed0a25bafb746"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY____dfa13c5df8fe4daf81ccb1ebb8f1240d",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "EF.PwdLnIcn",
+            "widgetId": "FlxContainerLine",
+            "propertyName": "skin",
+            "propertyValue": "CopyslNormal084f714f4330f44",
+            "itemKUID": "dc499b380ab74a8593eed0a25bafb746",
+            "widgetKUID": "39fc21274c61453bb7cf33dbcc756d09",
+            "skinKUID": "s329231222c1463492acdfe52a9e17e5",
+            "isSkinProperty": true,
+            "wType": "FlexContainer",
+            "currentTheme": "defaultTheme",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "this.view.FlxContainerLine"
+        }, {
+            "id": "ADD_SNIPPET__a5876307c68447d09405b0f2632d84ba",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//Password validation Logic\n//Length as 6 to 16\n//Password has one Alpha, one Numeric and one Special Character\n//Special Characters include !@#$%^&*_\n\nvar regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*_])[a-zA-Z0-9!@#$%^&*_]{6,16}$/;\n\n//Check if the field is empty then set the text to Normal else check for Validation\nif(/^\\s*$/.test(this.view.txtPasswordSLI.text))\n  {\n        self.view.txtPasswordSLI[\"skin\"] = \"txtboxPwdSLine\"\n        self.view.FlxContainerLine[\"skin\"] = \"slNormal\"   \n  }\n  else\n  {  \n    //Check if Password has all the required validations and set skin to Normal\n\n    if (regularExpression.test(this.view.txtPasswordSLI.text))\n    {\n        self.view.txtPasswordSLI[\"skin\"] = \"txtboxPwdSLine\"\n        self.view.FlxContainerLine[\"skin\"] = \"slNormal\"   \n    }\n\n  else\n  //Check if Password is failing any required validations and set skin to Red  \n    {\n        self.view.txtPasswordSLI[\"skin\"] = \"txtboxPwdSLineRed\"\n        self.view.FlxContainerLine[\"skin\"] = \"slRed\"   \n    }\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

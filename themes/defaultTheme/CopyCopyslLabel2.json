@@ -1,0 +1,40 @@
+{
+  "android": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "8294a5ff",
+  "font_name": "Helvetica",
+  "font_size": 215,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "iphone": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s34dfd81f2204158bbded9d7ea2ea23c",
+  "spaan": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "spaandroidtablet": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "spaip": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "spaipad": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "tabrcandroid": {
+    "font_name": "VisualizerFontIcon"
+  },
+  "wType": "Label"
+}

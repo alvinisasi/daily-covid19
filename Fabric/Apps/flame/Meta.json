@@ -1,0 +1,10 @@
+{
+  "subType" : "customapp",
+  "description" : "This app is created from Studio App flame.\r\n",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "TodoApp",
+    "version" : "1.0",
+    "etag" : "805012c9-79e5-4aca-9e25-7ef61adbcd18"
+  } ]
+}

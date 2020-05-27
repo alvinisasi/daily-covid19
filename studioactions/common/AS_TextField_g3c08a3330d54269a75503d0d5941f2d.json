@@ -1,0 +1,38 @@
+{
+    "AS_TextField_g3c08a3330d54269a75503d0d5941f2d": {
+        "id": "AS_TextField_g3c08a3330d54269a75503d0d5941f2d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "uwdc499b380ab74a8593eed0a25bafb746",
+            "type": "userwidgets",
+            "KUID": "dc499b380ab74a8593eed0a25bafb746"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY____a17dfded7f474df5b52af58cdcce4940",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "EF.PwdLnIcn",
+            "widgetId": "FlxContainerLine",
+            "propertyName": "skin",
+            "propertyValue": "CopyslBlueColor072a8fe7472a54a",
+            "itemKUID": "dc499b380ab74a8593eed0a25bafb746",
+            "widgetKUID": "39fc21274c61453bb7cf33dbcc756d09",
+            "skinKUID": "s775ec2294294e8787c5b343b8a49231",
+            "isSkinProperty": true,
+            "wType": "FlexContainer",
+            "currentTheme": "defaultTheme",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "this.view.FlxContainerLine"
+        }]
+    }
+}
